@@ -1,5 +1,5 @@
 import {StudentType} from "../02/02";
-import {governmentBuildings, HouseType} from "../02/02_02";
+import {CityType, governmentBuildings, HouseType} from "../02/02_02";
 
 debugger
 
@@ -34,4 +34,9 @@ export const toFireStaff = (governmentBuilding: governmentBuildings, number: num
 }
 export const toHospStaff = (governmentBuilding: governmentBuildings, number: number) => {
     governmentBuilding.staffCount += number;
+}
+
+
+export const createMessage = (props: CityType) => {
+    return `Hello ${props.title} Citizens. I want you be happy. All ${props.citizensNumber} men`
 }
