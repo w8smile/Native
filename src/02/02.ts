@@ -1,4 +1,4 @@
-import * as string_decoder from "string_decoder";
+
 type TechType = {
     id: number
     title: string
@@ -12,7 +12,7 @@ type AddressType = {
     streetTitle: string
     city: LocalCityType
 }
-type StudentType = {
+export type StudentType = {
     id: number
     name: string
     age: number
@@ -22,7 +22,7 @@ type StudentType = {
 }
 
 
-const student: StudentType = {
+export const student: StudentType = {
     //синтаксис литерала объекта
     id: 1,
     name: "Serggg",
