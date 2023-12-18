@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const users = [{name: "Serg"}, {name: "Sara"}, {name: "Siri"}]
+  const liNames = users.map((u, i)=><li key={i}>{u.name}</li>)
   return (
     <div className="App">
-
+      {liNames}
     </div>
   );
 }
